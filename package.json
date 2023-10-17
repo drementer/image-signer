@@ -1,7 +1,6 @@
 {
-  "license": "MIT",
-  "description": "",
   "name": "image-signer",
+  "description": "",
   "version": "1.0.0",
   "scripts": {
     "parcel-watch": "parcel watch src/*.html --public-url ./ --no-source-maps",
@@ -16,11 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/drementer/.git"
+    "url": "git+https://github.com/drementer/image-signer.git"
   },
   "author": {
     "name": "drementer",
     "email": "klncarslanburak@gmail.com",
     "url": "https://github.com/drementer"
-  }
+  },
+  "license": "MIT"
 }
