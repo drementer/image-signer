@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:300,regular,500,600,700');
+
+$black: hsl(0, 0%, 0%);
+$white: hsl(0, 0%, 100%);
+$border-radius: 5px;
+
+/// 1.250 Major Third
+///
+/// @type map
+/// @access private
+///
+/// @link https://type-scale.com/
+$font-scales: (
+  'h1': 3.815,
+  'h2': 3.052,
+  'h3': 2.441,
+  'h4': 1.953,
+  'h5': 1.563,
+  'h6': 1.25,
+  'p': 1,
+  'label': 0.875,
+) !default;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Fira Code';
+  font-size: 16px;
+
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+
+  -webkit-tap-highlight-color: hsla(0, 0%, 0%, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+@each $element, $font-value in $font-scales {
+  #{$element} {
+    font-size: $font-value * 1rem;
+  }
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+::selection {
+  color: $white;
+  background-color: $black;
+}
+
+::placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+a:not([href]) {
+  opacity: 0.75;
+}
+
+.input {
+  padding: 0.5rem 1rem;
+
+  outline: none;
+  border: 1px solid $black;
+  border-radius: $border-radius;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0.5rem 1rem;
+
+  color: $white;
+
+  background-color: $black;
+  outline: none;
+  border: none;
+  border-radius: $border-radius;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+
+  margin: auto;
+	padding: 3rem 1rem;
+
+  width: min(100%, 720px);
+}
+
+.image-signer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+
+  &__setting {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    width: 100%;
+  }
+}

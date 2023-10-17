@@ -1,0 +1,19 @@
+# OS folder config files
+[Dd]esktop.ini
+.DS_Store
+
+# Windows shortcuts
+*.lnk
+
+# Sass
+.sass-cache/
+
+# Npm packages
+node_modules
+package-lock.json
+
+# Parcel
+.parcel-cache/
+
+# Project
+*.css.map

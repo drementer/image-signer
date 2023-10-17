@@ -1,0 +1,26 @@
+{
+  "license": "MIT",
+  "description": "",
+  "name": "image-signer",
+  "version": "1.0.0",
+  "scripts": {
+    "parcel-watch": "parcel watch src/*.html --public-url ./ --no-source-maps",
+    "parcel-dev": "parcel src/*.html --open --no-cache --no-source-maps",
+    "parcel-build": "parcel build src/*.html --public-url ./ --no-source-maps",
+    "sass-build": "sass src/assets/main.scss src/assets/style.min.css --style compressed --no-error-css",
+    "sass-watch": "sass --watch src/assets/main.scss src/assets/style.min.css --style expanded --error-css"
+  },
+  "devDependencies": {
+    "parcel": "^2.10.0",
+    "sass": "^1.69.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drementer/.git"
+  },
+  "author": {
+    "name": "drementer",
+    "email": "klncarslanburak@gmail.com",
+    "url": "https://github.com/drementer"
+  }
+}
