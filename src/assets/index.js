@@ -93,12 +93,12 @@ const createImageData = (image, text = '') => {
  * @param {string} [text=""] - The text to draw on the canvas.
  */
 const createPreviewImage = (image, text = '') => {
-  if (!text) return downloadButton.removeAttribute('href');
-
   const imageData = createImageData(image, text);
 
   previewImage.src = imageData;
   downloadButton.href = imageData;
+
+  if (!text) return downloadButton.removeAttribute('href');
 };
 
 /**
