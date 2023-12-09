@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image Signer</title>
-    <link rel="stylesheet" href="assets/style.min.css?v=1" />
-  </head>
-  <body>
-    <main class="main container">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Image Signer</title>
+		<link rel="stylesheet" href="assets/style.min.css?v=1">
+	</head>
+	<body>
+		<main class="main container">
 			<h1>Image Signer</h1>
-      <div class="image-signer">
-        <img
+			<div class="image-signer">
+				<img
           class="image-signer__preview"
           src="assets/test-image.jpg"
           alt="Random Image"
           preview-image
-        />
-        <div class="image-signer__setting">
-          <input class="input" type="text" placeholder="A sign text" value="By drementer" sign-input  />
-          <a
+        >
+				<div class="image-signer__setting">
+					<input class="input" type="text" placeholder="Your sign" value="By drementer" sign-input>
+					<a
             class="image-signer__button button"
-            download="custom-image.jpeg"
+            download="signed-image.jpeg"
             download-button
           >
             Download
           </a>
-        </div>
-      </div>
-    </main>
+				</div>
+			</div>
+		</main>
 
-    <script src="assets/index.js?v=1"></script>
-  </body>
+		<script src="assets/index.js?v=1"></script>
+	</body>
 </html>
