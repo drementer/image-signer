@@ -4,23 +4,6 @@ $black: hsl(0, 0%, 0%);
 $white: hsl(0, 0%, 100%);
 $border-radius: 5px;
 
-/// 1.250 Major Third
-///
-/// @type map
-/// @access private
-///
-/// @link https://type-scale.com/
-$font-scales: (
-  'h1': 3.815,
-  'h2': 3.052,
-  'h3': 2.441,
-  'h4': 1.953,
-  'h5': 1.563,
-  'h6': 1.25,
-  'p': 1,
-  'label': 0.875,
-) !default;
-
 * {
   box-sizing: border-box;
 }
@@ -42,23 +25,13 @@ body {
   overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   margin: 0;
   padding: 0;
 
+  font-size: 3.815rem;
   font-weight: normal;
   text-transform: capitalize;
-}
-
-@each $element, $font-value in $font-scales {
-  #{$element} {
-    font-size: $font-value * 1rem;
-  }
 }
 
 img,
@@ -120,7 +93,7 @@ a:not([href]) {
   width: 100%;
 
   margin: auto;
-	padding: 3rem 1rem;
+  padding: 3rem 1rem;
 
   width: min(100%, 720px);
 }
